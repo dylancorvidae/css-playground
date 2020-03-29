@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
+
+.shape-outer-projects {
+  display: flex;
+  flex-shrink: 0;
+  width: 600px;
+  height: 500px;
+  margin: 20px 0px 20px 0px;
+  background-image: linear-gradient(to bottom right, rgb(255, 77, 228), rgb(143, 0, 209), rgb(0, 110, 219));
+}
+
+.shape-inner-projects {
+  display: flex;
+  flex-direction: column;	
+  width: 595px;
+  height: auto;
+  background: url('./img/background.jpg') rgb(17, 17, 17);
+  margin: 5px;
+}
+
+.bevel2 {
+  -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+      clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
+}
