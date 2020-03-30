@@ -2,8 +2,9 @@
   box-sizing: border-box;
 }
 
-html {
+body {
   background-color: black;
+
 }
 
 .shape-outer-projects {
@@ -12,7 +13,12 @@ html {
   width: 600px;
   height: 500px;
   margin: 20px 0px 20px 0px;
-  background-image: linear-gradient(to bottom right, rgb(255, 77, 228), rgb(143, 0, 209), rgb(0, 110, 219));
+  background: linear-gradient(to bottom right, #ff4de4, #8f00d1, #006edb);
+  background-size: 200% 200%;
+  animation: moving-gradient 4s ease infinite;
+  // -webkit-animation: moving-gradient 30s ease infinite;
+  // -moz-animation: moving-gradient 30s ease infinite;
+  // -o-animation: moving-gradient 30s ease infinite;
 }
 
 .shape-inner-projects {
@@ -28,3 +34,24 @@ html {
   -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
       clip-path: polygon(5% 0%, 95% 0%, 100% 5%, 100% 95%, 95% 100%, 5% 100%, 0% 95%, 0% 5%);
 }
+
+@keyframes moving-gradient {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 100%}
+  100%{background-position:0% 0%}
+// }
+// @-webkit-keyframes moving-gradient {
+//     0%{background-position:0% 2%}
+//     50%{background-position:100% 99%}
+//     100%{background-position:0% 2%}
+// }
+// @-moz-keyframes moving-gradient {
+//     0%{background-position:0% 2%}
+//     50%{background-position:100% 99%}
+//     100%{background-position:0% 2%}
+// }
+// @-o-keyframes moving-gradient {
+//     0%{background-position:0% 2%}
+//     50%{background-position:100% 99%}
+//     100%{background-position:0% 2%}
+// }
