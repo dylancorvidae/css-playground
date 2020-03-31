@@ -4,7 +4,6 @@
 
 body {
   background-color: black;
-
 }
 
 .shape-outer-projects {
@@ -13,7 +12,7 @@ body {
   width: 600px;
   height: 500px;
   margin: 20px 0px 20px 0px;
-  background: linear-gradient(to bottom right, #ff4de4, #8f00d1, #006edb);
+  background-image: linear-gradient(to bottom right, #ff4de4, #8f00d1, #006edb);
   background-size: 200% 200%;
   animation: moving-gradient 4s ease infinite;
   // -webkit-animation: moving-gradient 30s ease infinite;
@@ -39,7 +38,7 @@ body {
   0%{background-position:0% 0%}
   50%{background-position:100% 100%}
   100%{background-position:0% 0%}
-// }
+}
 // @-webkit-keyframes moving-gradient {
 //     0%{background-position:0% 2%}
 //     50%{background-position:100% 99%}
